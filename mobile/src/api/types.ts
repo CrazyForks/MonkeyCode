@@ -102,6 +102,8 @@ export interface TaskChunkEntry {
   kind?: string;
   data?: string;
   labels?: Record<string, string>;
+  seq?: number;
+  turn_seq?: number;
   timestamp?: number;
 }
 
