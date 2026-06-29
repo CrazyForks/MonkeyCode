@@ -2084,8 +2084,10 @@ export interface GithubComChaitinMonkeyCodeBackendDomainTaskChunkEntry {
   event?: string;
   kind?: string;
   labels?: Record<string, string>;
-  /** 轮次号，可作为 cursor 翻页；仅日志存储为 ClickHouse 时有值 */
+  /** 消息序号，来自 ClickHouse msg_seq_start */
   seq?: number;
+  /** 轮次号，可作为 cursor 翻页；仅日志存储为 ClickHouse 时有值 */
+  turn_seq?: number;
   timestamp?: number;
 }
 

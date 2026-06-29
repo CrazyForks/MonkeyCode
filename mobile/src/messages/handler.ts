@@ -89,6 +89,7 @@ export interface RawChunk {
   event?: string;
   kind?: string;
   data?: unknown;
+  seq?: number;
   timestamp?: number;
 }
 
